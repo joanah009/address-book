@@ -1,0 +1,39 @@
+html { background: #eeeeee; overflow: hidden; }
+
+.shadow, .homepage .information-list .people-list .information { -webkit-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.39); -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.39); box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.39); }
+
+/********** Homepage **********/
+.homepage { position: relative; background: #eeeeee; @extends .shadow; }
+.homepage h2 { text-align: center; }
+.homepage label { width: 120px; }
+.homepage ul { padding-left: 0; }
+.homepage ul li { list-style: none; }
+.homepage .sec-1 .container { background: #ffffff; }
+.homepage .add .info { margin-bottom: 3px; }
+.homepage .add .info input { width: 77%; padding: 2px 6px; }
+.homepage .add .btn-submit { position: relative; right: 1%; margin-top: 10px; text-align: right; }
+.homepage .add .btn-submit button { background: #d51c1c; border: 0; color: #fff; padding: 7px 33px; border-radius: 5px; }
+.homepage .add .btn-submit button:hover { cursor: pointer; }
+.homepage .information-list::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #eeeeee; }
+.homepage .information-list::-webkit-scrollbar { width: 7px; background-color: #eeeeee; }
+.homepage .information-list::-webkit-scrollbar-thumb { background-color: #000000; border: 2px solid #3c3c3c; }
+.homepage .information-list { max-height: 500px; height: 500px; overflow-y: scroll; }
+.homepage .information-list .information:nth-child(odd) { border-left: 9px solid #4141ab; }
+.homepage .information-list .information:nth-child(even) { border-left: 9px solid #b53629; }
+.homepage .information-list .people-list .information ul { margin-bottom: 0; }
+.homepage .information-list .people-list .information ul li { font-weight: 600; }
+.homepage .information-list .people-list .information ul li span { padding-left: 5px; font-weight: 400; }
+.homepage .information-list .people-list .information .avatar { float: left; }
+.homepage .information-list .people-list .information .avatar img { max-width: 165px; margin-top: -18px; padding-right: 10px; }
+
+@media (max-width: 1199px) { html { background: #eeeeee; overflow: scroll; }
+  .homepage .add .info input { width: 85%; }
+  .homepage .add .btn-submit { right: 2%; } }
+@media (max-width: 1199px) { .homepage .add .info input { width: 100%; }
+  .homepage .add .btn-submit { right: 0; } }
+@media (max-width: 767px) { .homepage .information-list .people-list .information .avatar { width: 100%; text-align: center; }
+  .homepage .information-list .people-list .information ul li { padding: 0 25px; }
+  .homepage .information-list .information:nth-child(odd) { border-left: 0; border-bottom: 9px solid #4141ab; }
+  .homepage .information-list .information:nth-child(even) { border-left: 0; border-bottom: 9px solid #d51c1c; } }
+
+/*# sourceMappingURL=custom.css.map */

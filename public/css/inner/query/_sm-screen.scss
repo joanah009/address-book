@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+header nav {
+	    max-height: none;
+	 }
+
+ 	header .logo {
+	    top: 0;
+	    max-width: 115px;
+	    }
+	.homepage .sec-1 {
+	    height: 575px;
+	    max-height: 575px;
+    }
+
+    header ul li a {
+    	margin-left: 0;
+    	text-align: center;
+    }
+
+}
+

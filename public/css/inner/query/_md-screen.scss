@@ -1,0 +1,44 @@
+@media (max-width: 1199px) {
+
+	html {
+	    background: #eeeeee;
+	    overflow: scroll;
+	}
+	.homepage .add .info input {
+	    width: 85%;
+	}
+
+	.homepage .add .btn-submit {
+	    right: 2%;
+	}
+}
+
+@media (max-width: 1199px) {
+	.homepage .add .info input {
+	    width: 100%;
+	}
+
+	.homepage .add .btn-submit {
+	    right: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.homepage .information-list .people-list .information .avatar {
+	    width: 100%;
+	    text-align: center;
+	}
+	.homepage .information-list .people-list .information ul li {
+	    padding: 0 25px;
+	}
+
+	.homepage .information-list .information:nth-child(odd) {
+	    border-left: 0;
+	    border-bottom: 9px solid $blue;
+	}
+
+	.homepage .information-list .information:nth-child(even) {
+	    border-left: 0;
+	    border-bottom: 9px solid $red;
+	}
+}

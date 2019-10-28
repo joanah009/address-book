@@ -1,0 +1,130 @@
+//global
+
+$red: #d51c1c;
+$light-gray: #eeeeee;
+$white: #ffffff;
+$blue: #4141ab;
+$maroon: #b53629;
+
+html {
+	background: $light-gray;
+	overflow: hidden;
+}
+
+
+
+.shadow {
+-webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.39);
+box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.39);}
+
+/********** Homepage **********/
+.homepage {
+	position: relative;
+	background: $light-gray;
+	@extends .shadow;
+	h2 {
+		text-align: center;
+	}
+
+	label {
+		width: 120px;
+	}
+	
+	ul {
+		padding-left: 0;
+		li {
+		    list-style: none;
+		}
+	}
+
+	.sec-1 .container {
+		background: $white;
+	}
+
+	.add {
+		.info {
+			margin-bottom: 3px;
+			input {
+				width: 77%;
+				padding: 2px 6px;
+			}
+		}
+	
+		.btn-submit {
+		    position: relative;
+		    right: 1%;
+		    margin-top: 10px;
+		    text-align: right;
+			button {
+				background: $red;
+			    border: 0;
+			    color: #fff;
+			    padding: 7px 33px;
+			    border-radius: 5px;
+			    &:hover {
+					cursor: pointer;
+
+				}
+			}
+
+		}
+	}//add
+
+	.information-list::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: $light-gray;
+	}
+
+	.information-list::-webkit-scrollbar {
+		width: 7px;
+		background-color: $light-gray;
+	}
+
+	.information-list::-webkit-scrollbar-thumb {
+		background-color: #000000;
+		border: 2px solid #3c3c3c;
+	}
+
+	.information-list {
+		max-height: 500px;
+	    height: 500px;
+	    overflow-y: scroll;
+	    .information {
+	    	&:nth-child(odd) {
+				border-left: 9px solid $blue;
+	    	}
+	    	&:nth-child(even) {
+				border-left: 9px solid $maroon;
+	    	}
+	    
+		}
+		
+		.people-list {
+			.information {
+				@extend .shadow;
+				ul {
+					margin-bottom: 0;
+					li {
+						font-weight: 600;
+						span {
+							padding-left: 5px;
+							font-weight: 400;
+						}
+					}
+				}
+
+				.avatar {
+					float: left;
+					img {
+						max-width: 165px;
+					    margin-top: -18px;
+					    padding-right: 10px;
+					}
+				}
+			}
+		}//people-list
+	}//information-list
+
+}//homepage
+
