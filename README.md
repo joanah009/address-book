@@ -1,4 +1,13 @@
-- Install reactjs https://www.liquidweb.com/kb/install-react-js-windows/
-- Open cmd then access the folder react-app
-- In cmd type 'cd address-book' without quotes
-- Then type 'npm start' without quotes to run the app.
+#### Install reactjs https://www.liquidweb.com/kb/install-react-js-windows/
+### Open cmd then access the folder react-app
+### In cmd inside the react-app folder type
+```bash
+cd address-book
+```
+```bash
+npm install
+```
+### To run the app
+```bash
+npm start
+```
